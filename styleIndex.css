@@ -1,0 +1,633 @@
+/* -----------------------------------------------------ESTILOS GERAIS DA PÁGINA--------------------------------------------- */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+
+*::selection{
+    color: black;
+    background-color: white;   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+
+
+body{
+    background-color: #2e2e2e;
+}
+
+
+h2{
+    font-family: 'Anton', sans-serif;
+    font-weight: 100;
+    
+}
+
+a:visited{
+    color: white;
+}
+/* -------------------------------------------FIM ESTILOS GERAIS DA PÁGINA--------------------------------------------- */
+/* ---------------------------------------------COMEÇO ESTILO MENU-------------------------------------------------- */
+
+.logoPicture a img{
+    display: block;
+    height: 50px;
+    width: 60px;
+}
+
+.logoText{
+    font-size: 14px;
+}
+
+.logoText h2>a{
+    color: white;
+    
+}
+
+
+
+.containerLogo{
+
+    display: flex;
+    align-items: center; 
+    width: max-content; 
+
+}
+
+
+
+.menuList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: bold;
+    
+}
+
+li{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.menuList li:nth-child(1)::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #04278a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.menuList li:nth-child(1):hover::after{
+    width: 100%;
+}
+
+.firstChild:hover{
+
+    transition: 0.2s ease-in-out;
+    color: #506fc6;
+
+}
+
+.menuList li:nth-child(2)::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #b73232;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.menuList li:nth-child(2):hover::after{
+    width: 100%;
+}
+
+.secondChild:hover{
+
+    transition: 0.2s ease-in-out;
+    color: #d55f5f;
+
+}
+
+.menuList li:nth-child(3)::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #5c5c5c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.menuList li:nth-child(3):hover::after{
+    width: 100%;
+}
+
+.thirdChild:hover{
+
+    transition: 0.2s ease-in-out;
+    color: #838383;
+
+}
+
+
+
+/* #838383 */
+
+.menuList li:nth-child(4)::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.menuList li:nth-child(4):hover::after{
+    width: 100%;
+}
+
+.menuList li:nth-child(5)::after{
+
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(129, 45, 238);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.menuList li:nth-child(5):hover::after{
+    width: 100%;
+}
+
+.lastChild:hover{
+
+    color: rgb(149, 89, 228);
+    transition: 0.2s ease-in-out;
+} 
+
+
+
+.menuList li>a{
+
+    padding: 15px 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 10px 15px 40px;
+    background-color: black;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: fixed;
+    
+
+}
+
+header{
+    position: absolute;
+    z-index: 2;
+}
+/* -------------------------------------------FIM ESTILO MENU---------------------------------------------------------- */
+
+/* -------------------------------------------COMEÇO ESTILO PINTURAS RECENTES-------------------------------------- */
+
+.titles{
+    
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15pt;
+    font-weight: 100;
+    display: block;
+    padding-top: 10%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.boxTitles{
+    display: block;
+    margin-top: 5%;
+}
+
+.principalTitle{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.borderTitle{
+
+    border-top: solid white 2px;
+    border-bottom: solid white 2px;
+    border-radius: 10px;
+    width: 50%;
+
+}
+
+.category{
+
+    margin-left: 9%;
+    width: max-content;
+}
+
+.category a{
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    position: relative;
+    font-size: x-large;
+    
+}
+
+
+
+.paintingCategory a::after{
+
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #04278a;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.paintingCategory a:hover::after{
+    width: 100%;
+    
+}
+
+/* COR DA PALAVRA */
+.paintingCategory a:hover{
+
+    transition: 0.2s ease-in-out;
+    color: #506fc6;
+    
+}
+
+
+
+.boxPaintings{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    z-index: 1; 
+}
+
+.image{
+    position: relative;
+    display: block;
+    width: 350px;
+    height: 100%;
+}
+
+.contentPaintings{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 335px;
+    height: 100%;
+    background-size: cover;
+    background-color: rgb(0,0,0,0.8);
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.contentPaintings:hover{
+    opacity: 1;
+}
+
+
+.boxPaintings picture img{
+    position: relative;
+    display: block;
+    height: 27pc;
+    padding-right: 15px;
+    border-radius: 3px;
+    
+}
+
+img{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.boxPaintings h2{
+    
+    color:#375abd;
+    text-transform: uppercase;
+}
+
+.boxPaintings p{
+    color: white;
+    text-transform: uppercase;
+}
+
+/* -------------------------------------FIM ESTILO PINTURAS RECENTES----------------------------------------------------- */
+
+/* --------------------------------------INICIO ESTILO ESCULTURAS RECENTES--------------------------------------------------- */
+.boxSculptures{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    border-radius: 3px;
+}
+
+.boxSculptures picture img{
+    display: block;
+    height: 32pc;
+    padding-right: 15px;
+}
+.contentSculptures{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 335px;
+    height: 100%;
+    background-size: cover;
+    background-color: rgb(0,0,0,0.8);
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Hind Madurai', sans-serif;
+
+    
+}
+
+.contentSculptures:hover{
+    opacity: 1;
+}
+
+.boxSculptures h2{
+    color: #d55f5f;
+    text-transform: uppercase;
+}
+
+.boxSculptures p{
+    color: white;
+    text-transform: uppercase;
+}
+
+.sculptureCategory a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #b73232;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.sculptureCategory a:hover::after{
+
+    width: 100%;
+    
+}
+
+
+.sculptureCategory a:hover{
+
+    transition: 0.2s ease-in-out;
+    color: #d55f5f;
+}
+
+/* -----------------------------------------FIM ESTILO ESCULTURAS RECENTES------------------------------------------- */
+
+/* ------------------------------------------INICIO ESTILO FOTOGRAFIAS RECENTES-------------------------------------------- */
+.boxPhotographs{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+.boxPhotographs picture img{
+    display: block;
+    height: 32pc;
+    padding-right: 15px;
+}
+.contentPhotographs{
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 335px;
+    height: 100%;
+    background-size: cover;
+    background-color: rgb(0,0,0,0.8);
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Hind Madurai', sans-serif;
+
+    
+}
+
+.contentPhotographs:hover{
+    opacity: 1;
+}
+
+.boxPhotographs h2{
+    color: #838383;
+    text-transform: uppercase;
+}
+
+.boxPhotographs p{
+    color: white;
+    text-transform: uppercase;
+}
+
+.photographsCategory a::after{
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: #5c5c5c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.6s ease-in-out;
+}
+
+.photographsCategory a:hover::after{
+    width: 100%;
+    
+}
+
+
+.photographsCategory a:hover{
+
+    transition: 0.2s ease-in-out;
+    color: #838383;
+}
+
+/* ---------------------------------------------FIM ESTILO FOTOGRAFIAS RECENTES------------------------------------------- */
+
+/* ----------------------------------------------INICIO ESTILO FOOTER------------------------------------------------------------- */
+
+footer{
+    background-color: black;
+    color: white;
+    display: block;
+}
+
+
+
+.logoFooter{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: max-content;
+    padding-top: 2%;
+    flex-direction: column;
+}
+
+.contact{
+    padding-top: 2%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.contactGallery{
+    
+    font-family: 'Hind Madurai', sans-serif;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+
+    
+}
+
+.contactGallery a{
+    padding: 5px 20px 5px 20px;
+
+}
+
+.contactDev a{
+
+    padding: 5px 20px 5px 20px;
+    
+}
+
+.contactDev{
+    font-family: 'Hind Madurai', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-direction: column;
+}
+
+footer a{
+
+    text-decoration: none;
+    color: white;
+    
+    
+}
+
+.contact h2{
+    padding-bottom: 4%;
+}
+
+
+.emailGallery:hover{
+    color: #375abd;
+    transition: 0.2s ease-in-out;
+}
+
+.phone:hover{
+    color: #d55f5f;
+    transition: 0.2s ease-in-out;
+}
+
+.message:hover{
+    color: #838383;
+    transition: 0.2s ease-in-out;
+}
+
+.github:hover{
+    color: #375abd;
+    transition: 0.2s ease-in-out;
+}
+
+.emailDev:hover{
+    color: #d55f5f;
+    transition: 0.2s ease-in-out;
+
+}
+
+.lattes:hover{
+    color: #838383;
+    transition: 0.2s ease-in-out;
+}
+
+/* -------------------------------------FIM ESTILO FOOTER---------------------------------------------------- */
+
+
