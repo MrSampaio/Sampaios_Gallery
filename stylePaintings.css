@@ -19,6 +19,10 @@ a:visited{
     color: white;
 }
 
+a{
+    color: white;
+}
+
 
 *::selection{
     color: #04278a;
