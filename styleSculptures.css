@@ -26,6 +26,9 @@ a:visited{
     color: white;
 }
 
+a{
+    color: white;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
